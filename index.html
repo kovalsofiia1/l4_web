@@ -27,7 +27,16 @@
               challenges and find solutions
             </p>
             <div class="photo">
-              <img src="./images/woman-photo-desctop.jpg" alt="woman" />
+              <img
+                srcset="
+                  ./images/woman-photo-mobile.jpg  240w,
+                  ./images/woman-photo-mobile.jpg  384w,
+                  ./images/woman-photo-desctop.jpg 520w
+                "
+                sizes="(max-width:630px) 240px, (max-width:898px) 384px,(min-width:899px) 520px,"
+                src="./images/online-courses-mobile.jpg"
+                alt="woman"
+              />
             </div>
 
             <div class="title-container">
@@ -36,7 +45,14 @@
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="footer-container">
+          <p class="footer-text">
+            <a href="" class="footer-text-link">Website templates</a> created
+            with created with created with.
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
